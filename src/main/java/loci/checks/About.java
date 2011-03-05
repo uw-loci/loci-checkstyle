@@ -55,7 +55,9 @@ public final class About {
   public static final String URL_CHECKSTYLE =
     "http://checkstyle.sourceforge.net/";
 
-  private About() { }
+  private About() {
+    // prevent instantiation of utility class
+  }
 
   public static void main(String[] args) {
     JOptionPane.showMessageDialog(null,

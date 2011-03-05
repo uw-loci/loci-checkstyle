@@ -56,17 +56,17 @@ public class BlankLinesCheck extends Check {
   // -- BlankLinesCheck API methods --
 
   /** Sets the maximum allowed number of consecutive blank lines. */
-  public void setMax(int max) { this.max = max; }
+  public void setMax(final int max) { this.max = max; }
 
   // -- Check API methods --
 
-  /* @see com.puppycrawl.tools.checkstyle.api.Check#getDefaultTokens() */
+  @Override
   public int[] getDefaultTokens() {
     return new int[0];
   }
 
-  /* @see com.puppycrawl.tools.checkstyle.api.Check#beginTree(DetailAST) */
-  public void beginTree(DetailAST aRootAST) {
+  @Override
+  public void beginTree(final DetailAST aRootAST) {
     String[] lines = getLines();
     int count = 0;
     for (int i=0; i<lines.length; i++) {
