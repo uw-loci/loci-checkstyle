@@ -40,8 +40,8 @@ import javax.swing.JOptionPane;
  * Displays a small information dialog about this package.
  *
  * <dl><dt><b>Source code:</b></dt>
- * <dd><a href="http://dev.loci.wisc.edu/trac/java/browser/trunk/projects/loci-checks/src/main/java/loci/checks/About.java">Trac</a>,
- * <a href="http://dev.loci.wisc.edu/svn/java/trunk/projects/loci-checks/src/main/java/loci/checks/About.java">SVN</a></dd></dl>
+ * <dd><a href="http://dev.loci.wisc.edu/trac/software/browser/trunk/projects/loci-checks/src/main/java/loci/checks/About.java">Trac</a>,
+ * <a href="http://dev.loci.wisc.edu/svn/software/trunk/projects/loci-checks/src/main/java/loci/checks/About.java">SVN</a></dd></dl>
  *
  * @author Curtis Rueden ctrueden at wisc.edu
  */

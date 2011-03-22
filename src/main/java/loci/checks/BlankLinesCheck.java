@@ -41,8 +41,8 @@ import com.puppycrawl.tools.checkstyle.api.DetailAST;
  * A Checkstyle check for identifying multiple consecutive blank lines.
  *
  * <dl><dt><b>Source code:</b></dt>
- * <dd><a href="http://dev.loci.wisc.edu/trac/java/browser/trunk/projects/loci-checks/src/main/java/loci/checks/BlankLinesCheck.java">Trac</a>,
- * <a href="http://dev.loci.wisc.edu/svn/java/trunk/projects/loci-checks/src/main/java/loci/checks/BlankLinesCheck.java">SVN</a></dd></dl>
+ * <dd><a href="http://dev.loci.wisc.edu/trac/software/browser/trunk/projects/loci-checks/src/main/java/loci/checks/BlankLinesCheck.java">Trac</a>,
+ * <a href="http://dev.loci.wisc.edu/svn/software/trunk/projects/loci-checks/src/main/java/loci/checks/BlankLinesCheck.java">SVN</a></dd></dl>
  *
  * @author Curtis Rueden ctrueden at wisc.edu
  */
