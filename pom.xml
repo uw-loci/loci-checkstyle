@@ -21,8 +21,7 @@
 
 	<licenses>
 		<license>
-			<name>BSD</name>
-			<url>http://dev.loci.wisc.edu/svn/software/trunk/projects/loci-checks/LICENSE.txt</url>
+			<name>Simplified BSD License</name>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -46,6 +45,14 @@
 							<packageName>loci.checks</packageName>
 						</manifest>
 					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>bsd_2</licenseName>
+					<projectName>LOCI Checkstyle checks.</projectName>
 				</configuration>
 			</plugin>
 		</plugins>
