@@ -18,13 +18,45 @@
 	<name>LOCI Checkstyle checks</name>
 	<description>LOCI's Checkstyle extensions, for checking source code style.</description>
 	<inceptionYear>2006</inceptionYear>
-
 	<licenses>
 		<license>
 			<name>Simplified BSD License</name>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<email>ctrueden@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/curtis-rueden</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/uw-loci/loci-checkstyle</connection>
+		<developerConnection>scm:git:git@github.com:uw-loci/loci-checkstyle</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/uw-loci/loci-checkstyle</url>
+	</scm>
+
+	<properties>
+		<enforcer.skip>true</enforcer.skip>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -33,10 +65,6 @@
 			<version>5.0</version>
 		</dependency>
 	</dependencies>
-
-	<properties>
-		<enforcer.skip>true</enforcer.skip>
-	</properties>
 
 	<build>
 		<plugins>
@@ -61,34 +89,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<developers>
-		<developer>
-			<id>ctrueden</id>
-			<name>Curtis Rueden</name>
-			<email>ctrueden@wisc.edu</email>
-			<url>http://loci.wisc.edu/people/curtis-rueden</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>-6</timezone>
-		</developer>
-	</developers>
-
-	<scm>
-		<connection>scm:git:git://github.com/uw-loci/loci-checkstyle</connection>
-		<developerConnection>scm:git:git@github.com:uw-loci/loci-checkstyle</developerConnection>
-		<tag>HEAD</tag>
-		<url>https://github.com/uw-loci/loci-checkstyle</url>
-	</scm>
-
-	<repositories>
-		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
-		</repository>
-	</repositories>
-
 </project>
