@@ -6,18 +6,24 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>loci</groupId>
-		<artifactId>pom-loci</artifactId>
-		<version>2.0.0</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>14.0.0</version>
 		<relativePath />
 	</parent>
 
+	<groupId>loci</groupId>
 	<artifactId>loci-checkstyle</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
 	<name>LOCI Checkstyle checks</name>
 	<description>LOCI's Checkstyle extensions, for checking source code style.</description>
+	<url>https://github.com/uw-loci/loci-checkstyle</url>
 	<inceptionYear>2006</inceptionYear>
+	<organization>
+		<name>LOCI</name>
+		<url>https://loci.wisc.edu/</url>
+	</organization>
 	<licenses>
 		<license>
 			<name>Simplified BSD License</name>
@@ -44,15 +50,38 @@
 		</contributor>
 	</contributors>
 
+	<mailingLists>
+		<mailingList>
+			<name>LOCI Software</name>
+			<subscribe>https://loci.wisc.edu/mailman/listinfo/loci-software</subscribe>
+			<unsubscribe>https://loci.wisc.edu/mailman/listinfo/loci-software</unsubscribe>
+			<post>loci-software@loci.wisc.edu</post>
+			<archive>https://loci.wisc.edu/pipermail/loci-software/</archive>
+		</mailingList>
+	</mailingLists>
+
 	<scm>
 		<connection>scm:git:git://github.com/uw-loci/loci-checkstyle</connection>
 		<developerConnection>scm:git:git@github.com:uw-loci/loci-checkstyle</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/uw-loci/loci-checkstyle</url>
 	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/uw-loci/loci-checkstyle/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://jenkins.imagej.net/job/loci-checkstyle</url>
+	</ciManagement>
 
 	<properties>
-		<enforcer.skip>true</enforcer.skip>
+		<main-class>loci.checks.About</main-class>
+		<package-name>loci.checks</package-name>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Board of Regents of the University of
+Wisconsin-Madison.</license.copyrightOwners>
+		<license.projectName>LOCI Checkstyle checks.</license.projectName>
 	</properties>
 
 	<repositories>
@@ -67,30 +96,12 @@
 			<groupId>checkstyle</groupId>
 			<artifactId>checkstyle</artifactId>
 			<version>5.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-beanutils</groupId>
+					<artifactId>commons-beanutils-core</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>loci.checks.About</mainClass>
-							<packageName>loci.checks</packageName>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<configuration>
-					<licenseName>bsd_2</licenseName>
-					<projectName>LOCI Checkstyle checks.</projectName>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
